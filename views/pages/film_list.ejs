@@ -1,0 +1,30 @@
+<!-- views/pages/film_list.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head') %>
+ 
+
+<body>
+    
+    <%- include ('../partials/header') %>
+
+    <main>
+        <div class="content">
+            <% for (var j =1; j <=10;  j++ ) { %>
+                <h1>Film list</h1>
+                <div class="list_element">   
+                    <% for (var i =1; i <=10;  i++ ) { %>
+                        <%- include ('../partials/film_div') %>
+                    <% } %>
+                </div>
+            <% } %>            
+        </div>
+
+        
+
+    </main>
+    <%- include ('../partials/footer') %>
+</body>
+</html> 

@@ -1,2 +1,2 @@
 # Memorya
-node.js web project
+node.js Web site for films, series, video-games seen and played

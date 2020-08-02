@@ -1,0 +1,99 @@
+/*TODO: adaptative padding like stackover*/
+/*TODO: center film with any number of film show on a line*/
+
+body {
+    width: 100%;
+    margin: auto;
+    background: #2d2d2d;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited { 
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+div.header {
+    z-index:500;
+    background: #393939;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 0px 10%;
+}
+
+div.content {
+    padding: 50px 5% 0px;
+}
+
+div.footer {
+    position: relative;
+    bottom:0;
+    background: #2d2d2d;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+div.list_element {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1px 0 0 1px;
+}
+
+div.list_element li{
+    float: left;
+    width: 164px;
+    height: 240px;
+    margin: 0 16px 16px 0;
+}
+
+div.list_element li img{
+    z-index:-15;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+div.overlay {
+    width: 164px;
+    height: 240px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+
+.overlay::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, black 100%);
+    margin-top: -150px;
+    border-radius: 8px;
+    height: 148px;
+    content: '';
+  }
+
+div.single_block img {
+	opacity: 1;
+}
+
+div.single_block:hover img {
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    opacity: .5;
+}
+
+div.list_element li div.title{
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    transform:translateY(-100%);
+}
